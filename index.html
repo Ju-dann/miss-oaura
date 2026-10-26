@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <p class="codigo">AURA SYSTEM // 2089</p>
+        <h1>MISSÃO <span>AURA</span></h1>
+        <p class="subtitulo">Descubra seu perfil</p>
+    </header>
+
+    <main>
+        <section id="tela-teste" class="painel">
+            <h2>Prepare-se para a missão!</h2>
+            <p>Responda às perguntas e descubra seu perfil.</p>
+
+            <form id="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required maxlength="60">
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" required>
+
+                <h3>1. O que você faria no planeta?</h3>
+                <select id="p1" required>
+                    <option value="">Escolha uma opção</option>
+                    <option value="1">Construir equipamentos</option>
+                    <option value="2">Investigar o planeta</option>
+                    <option value="3">Explorar lugares</option>
+                    <option value="4">Organizar a equipe</option>
+                </select>
+
+                <h3>2. Qual atividade você prefere?</h3>
+                <select id="p2" required>
+                    <option value="">Escolha uma opção</option>
+                    <option value="1">Resolver problemas</option>
+                    <option value="2">Fazer pesquisas</option>
+                    <option value="3">Viver aventuras</option>
+                    <option value="4">Planejar tarefas</option>
+                </select>
+
+                <h3>3. Como ajudaria numa emergência?</h3>
+                <select id="p3" required>
+                    <option value="">Escolha uma opção</option>
+                    <option value="1">Consertar equipamentos</option>
+                    <option value="2">Analisar o problema</option>
+                    <option value="3">Procurar outra rota</option>
+                    <option value="4">Liderar a equipe</option>
+                </select>
+
+                <h3>4. O que levaria para a missão?</h3>
+                <select id="p4" required>
+                    <option value="">Escolha uma opção</option>
+                    <option value="1">Ferramentas</option>
+                    <option value="2">Laboratório portátil</option>
+                    <option value="3">Veículo de exploração</option>
+                    <option value="4">Mapas</option>
+                </select>
+
+                <button type="submit">Descobrir meu perfil</button>
+                <p id="mensagem" role="alert"></p>
+            </form>
+        </section>
+
+        <section id="tela-resultado" class="painel" hidden>
+            <h2 id="saudacao"></h2>
+
+            <img id="imagem-perfil" src="" alt="Imagem do perfil">
+           
+            <h2 id="nome-perfil"></h2>
+            <p id="categoria-perfil"></p>
+
+            <p>Nome: <span id="resultado-nome"></span></p>
+            <p>Idade: <span id="resultado-idade"></span></p>
+
+            <h3>Sobre seu perfil</h3>
+            <p id="descricao-perfil"></p>
+
+            <h3>Recomendação para a missão</h3>
+            <p id="recomendacao-perfil"></p>
+
+            <p id="mensagem-empate" role="status"></p>
+
+            <button type="button" id="refazer">Refazer teste</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>MISSÃO AURA - 2089</p>
+    </footer>
+</body>
+</html>
